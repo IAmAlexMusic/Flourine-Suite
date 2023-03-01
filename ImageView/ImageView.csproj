@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ImageView.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,11 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FileInfoManager.cs" />
+    <Compile Include="WND_MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="WND_MAIN.Designer.cs">
+      <DependentUpon>WND_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WND_SPLASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WND_SPLASH.Designer.cs">
+      <DependentUpon>WND_SPLASH.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,7 +72,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WND_MAIN.resx">
+      <DependentUpon>WND_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WND_SPLASH.resx">
+      <DependentUpon>WND_SPLASH.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +92,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guns_1_Landing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libexport\libexport.csproj">
+      <Project>{add2e2d9-a951-4275-bf2d-0fc8b6180f0a}</Project>
+      <Name>libexport</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

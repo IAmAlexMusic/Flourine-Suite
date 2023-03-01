@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ImageView")]
-[assembly: AssemblyDescription("ImageView : Alpha")]
+[assembly: AssemblyTitle("Export Library")]
+[assembly: AssemblyDescription("Export Library for ImageView")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alexware LLC")]
-[assembly: AssemblyProduct("ImageView")]
+[assembly: AssemblyProduct("libexport")]
 [assembly: AssemblyCopyright("Copyright © Alexware 2023")]
-[assembly: AssemblyTrademark("ImageView")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("21bf0cc1-344f-4c03-b31b-e7564481a5f1")]
+[assembly: Guid("add2e2d9-a951-4275-bf2d-0fc8b6180f0a")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.0.0.1")]
-[assembly: AssemblyFileVersion("0.0.0.1")]
+[assembly: AssemblyFileVersion("0.0.0.7")]
