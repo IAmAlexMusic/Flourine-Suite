@@ -35,24 +35,28 @@
             this.PROPERTIES_SIZE_BYTES = new System.Windows.Forms.Label();
             this.PROPERTIES_NAME = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.IMAGE_VIEW = new System.Windows.Forms.PictureBox();
             this.MASTER_MENU = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OPEN_IMAGE_FILE_DIALOG = new System.Windows.Forms.OpenFileDialog();
-            this.SAVE_IMAGE_FILE_DIALOG = new System.Windows.Forms.SaveFileDialog();
             this.exportAsIconToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsPNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsJPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsGIFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsTIFFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OPEN_IMAGE_FILE_DIALOG = new System.Windows.Forms.OpenFileDialog();
+            this.SAVE_IMAGE_FILE_DIALOG = new System.Windows.Forms.SaveFileDialog();
             this.CHOOSE_DIRECTORY_DIALOG = new System.Windows.Forms.FolderBrowserDialog();
+            this.IMAGE_VIEW = new System.Windows.Forms.PictureBox();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutImageViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IMAGE_VIEW)).BeginInit();
             this.MASTER_MENU.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IMAGE_VIEW)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,17 +101,12 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Name = "label1";
             // 
-            // IMAGE_VIEW
-            // 
-            resources.ApplyResources(this.IMAGE_VIEW, "IMAGE_VIEW");
-            this.IMAGE_VIEW.Name = "IMAGE_VIEW";
-            this.IMAGE_VIEW.TabStop = false;
-            // 
             // MASTER_MENU
             // 
             this.MASTER_MENU.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.exportToolStripMenuItem});
+            this.exportToolStripMenuItem,
+            this.helpToolStripMenuItem});
             resources.ApplyResources(this.MASTER_MENU, "MASTER_MENU");
             this.MASTER_MENU.Name = "MASTER_MENU";
             // 
@@ -150,15 +149,6 @@
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             resources.ApplyResources(this.exportToolStripMenuItem, "exportToolStripMenuItem");
             // 
-            // OPEN_IMAGE_FILE_DIALOG
-            // 
-            resources.ApplyResources(this.OPEN_IMAGE_FILE_DIALOG, "OPEN_IMAGE_FILE_DIALOG");
-            // 
-            // SAVE_IMAGE_FILE_DIALOG
-            // 
-            this.SAVE_IMAGE_FILE_DIALOG.FileName = "MyImage";
-            resources.ApplyResources(this.SAVE_IMAGE_FILE_DIALOG, "SAVE_IMAGE_FILE_DIALOG");
-            // 
             // exportAsIconToolStripMenuItem
             // 
             this.exportAsIconToolStripMenuItem.Name = "exportAsIconToolStripMenuItem";
@@ -189,9 +179,51 @@
             resources.ApplyResources(this.exportAsTIFFToolStripMenuItem, "exportAsTIFFToolStripMenuItem");
             this.exportAsTIFFToolStripMenuItem.Click += new System.EventHandler(this.exportAsTIFFToolStripMenuItem_Click);
             // 
+            // OPEN_IMAGE_FILE_DIALOG
+            // 
+            resources.ApplyResources(this.OPEN_IMAGE_FILE_DIALOG, "OPEN_IMAGE_FILE_DIALOG");
+            // 
+            // SAVE_IMAGE_FILE_DIALOG
+            // 
+            this.SAVE_IMAGE_FILE_DIALOG.FileName = "MyImage";
+            resources.ApplyResources(this.SAVE_IMAGE_FILE_DIALOG, "SAVE_IMAGE_FILE_DIALOG");
+            // 
             // CHOOSE_DIRECTORY_DIALOG
             // 
             this.CHOOSE_DIRECTORY_DIALOG.RootFolder = System.Environment.SpecialFolder.MyComputer;
+            // 
+            // IMAGE_VIEW
+            // 
+            resources.ApplyResources(this.IMAGE_VIEW, "IMAGE_VIEW");
+            this.IMAGE_VIEW.Name = "IMAGE_VIEW";
+            this.IMAGE_VIEW.TabStop = false;
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkForUpdatesToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.aboutImageViewToolStripMenuItem});
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            // 
+            // aboutImageViewToolStripMenuItem
+            // 
+            this.aboutImageViewToolStripMenuItem.Name = "aboutImageViewToolStripMenuItem";
+            resources.ApplyResources(this.aboutImageViewToolStripMenuItem, "aboutImageViewToolStripMenuItem");
+            this.aboutImageViewToolStripMenuItem.Click += new System.EventHandler(this.aboutImageViewToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // WND_MAIN
             // 
@@ -205,11 +237,12 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.MainMenuStrip = this.MASTER_MENU;
             this.Name = "WND_MAIN";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.RunFinalStartupTasks);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.IMAGE_VIEW)).EndInit();
             this.MASTER_MENU.ResumeLayout(false);
             this.MASTER_MENU.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IMAGE_VIEW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +271,9 @@
         private System.Windows.Forms.ToolStripMenuItem exportAsGIFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportAsTIFFToolStripMenuItem;
         private System.Windows.Forms.FolderBrowserDialog CHOOSE_DIRECTORY_DIALOG;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutImageViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
     }
 }

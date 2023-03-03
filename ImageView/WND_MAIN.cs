@@ -103,5 +103,17 @@ namespace ImageView
                 }
             }
         }
+
+        private void aboutImageViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new WND_ABOUT().ShowDialog();
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Start of Update Process
+            //
+            //There is no server go get the latest content yet, so the check for Updates Button will be hidden.
+        }
     }
 }
