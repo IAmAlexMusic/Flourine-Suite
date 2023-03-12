@@ -201,5 +201,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_LOGO_LONG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_ALEX_LOGO_SQUARE.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
