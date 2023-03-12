@@ -46,14 +46,15 @@
             this.exportAsJPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsGIFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsTIFFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutImageViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OPEN_IMAGE_FILE_DIALOG = new System.Windows.Forms.OpenFileDialog();
             this.SAVE_IMAGE_FILE_DIALOG = new System.Windows.Forms.SaveFileDialog();
             this.CHOOSE_DIRECTORY_DIALOG = new System.Windows.Forms.FolderBrowserDialog();
             this.IMAGE_VIEW = new System.Windows.Forms.PictureBox();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutImageViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PROPERTIES_DATETIME = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MASTER_MENU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IMAGE_VIEW)).BeginInit();
@@ -63,6 +64,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.PROPERTIES_DATETIME);
             this.panel1.Controls.Add(this.PROPERTIES_RESOLUTION);
             this.panel1.Controls.Add(this.PROPERTIES_SIZE_KBYTES);
             this.panel1.Controls.Add(this.PROPERTIES_SIZE_BYTES);
@@ -179,6 +181,33 @@
             resources.ApplyResources(this.exportAsTIFFToolStripMenuItem, "exportAsTIFFToolStripMenuItem");
             this.exportAsTIFFToolStripMenuItem.Click += new System.EventHandler(this.exportAsTIFFToolStripMenuItem_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkForUpdatesToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.aboutImageViewToolStripMenuItem});
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // aboutImageViewToolStripMenuItem
+            // 
+            this.aboutImageViewToolStripMenuItem.Name = "aboutImageViewToolStripMenuItem";
+            resources.ApplyResources(this.aboutImageViewToolStripMenuItem, "aboutImageViewToolStripMenuItem");
+            this.aboutImageViewToolStripMenuItem.Click += new System.EventHandler(this.aboutImageViewToolStripMenuItem_Click);
+            // 
             // OPEN_IMAGE_FILE_DIALOG
             // 
             resources.ApplyResources(this.OPEN_IMAGE_FILE_DIALOG, "OPEN_IMAGE_FILE_DIALOG");
@@ -198,32 +227,11 @@
             this.IMAGE_VIEW.Name = "IMAGE_VIEW";
             this.IMAGE_VIEW.TabStop = false;
             // 
-            // helpToolStripMenuItem
+            // PROPERTIES_DATETIME
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkForUpdatesToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.aboutImageViewToolStripMenuItem});
-            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
-            // 
-            // aboutImageViewToolStripMenuItem
-            // 
-            this.aboutImageViewToolStripMenuItem.Name = "aboutImageViewToolStripMenuItem";
-            resources.ApplyResources(this.aboutImageViewToolStripMenuItem, "aboutImageViewToolStripMenuItem");
-            this.aboutImageViewToolStripMenuItem.Click += new System.EventHandler(this.aboutImageViewToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
+            resources.ApplyResources(this.PROPERTIES_DATETIME, "PROPERTIES_DATETIME");
+            this.PROPERTIES_DATETIME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PROPERTIES_DATETIME.Name = "PROPERTIES_DATETIME";
             // 
             // WND_MAIN
             // 
@@ -275,5 +283,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutImageViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
+        private System.Windows.Forms.Label PROPERTIES_DATETIME;
     }
 }

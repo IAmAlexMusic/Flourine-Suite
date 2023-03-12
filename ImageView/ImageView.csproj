@@ -110,6 +110,9 @@
     <ApplicationManifest>imageview.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExifLib, Version=1.7.0.0, Culture=neutral, PublicKeyToken=30284005913968db, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExifLib.1.7.0.0\lib\net45\ExifLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -131,6 +134,12 @@
     </Compile>
     <Compile Include="WND_ABOUT.Designer.cs">
       <DependentUpon>WND_ABOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WND_LICENSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WND_LICENSE.Designer.cs">
+      <DependentUpon>WND_LICENSE.cs</DependentUpon>
     </Compile>
     <Compile Include="WND_MAIN.cs">
       <SubType>Form</SubType>
@@ -159,6 +168,9 @@
     <EmbeddedResource Include="WND_ABOUT.resx">
       <DependentUpon>WND_ABOUT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WND_LICENSE.resx">
+      <DependentUpon>WND_LICENSE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WND_MAIN.resx">
       <DependentUpon>WND_MAIN.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +178,7 @@
       <DependentUpon>WND_SPLASH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="imageview.manifest" />
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -184,6 +197,10 @@
     <None Include="Resources\Guns_1_Landing.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\libcompat\libcompat.csproj">
+      <Project>{c6998887-57c0-45e8-8b2e-a550271cf5da}</Project>
+      <Name>libcompat</Name>
+    </ProjectReference>
     <ProjectReference Include="..\libexport\libexport.csproj">
       <Project>{add2e2d9-a951-4275-bf2d-0fc8b6180f0a}</Project>
       <Name>libexport</Name>

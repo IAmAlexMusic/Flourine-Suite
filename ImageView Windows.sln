@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageView", "ImageView\Imag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libexport", "libexport\libexport.csproj", "{ADD2E2D9-A951-4275-BF2D-0FC8B6180F0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libcompat", "libcompat\libcompat.csproj", "{C6998887-57C0-45E8-8B2E-A550271CF5DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{ADD2E2D9-A951-4275-BF2D-0FC8B6180F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADD2E2D9-A951-4275-BF2D-0FC8B6180F0A}.Release|x64.ActiveCfg = Release|x64
 		{ADD2E2D9-A951-4275-BF2D-0FC8B6180F0A}.Release|x64.Build.0 = Release|x64
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Debug|x64.Build.0 = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Master|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Master|Any CPU.Build.0 = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Master|x64.ActiveCfg = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Master|x64.Build.0 = Debug|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{C6998887-57C0-45E8-8B2E-A550271CF5DA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
